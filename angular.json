@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "go"
+    }
+  },
+  "defaultProject": "go",
+  "cli": {
+    "analytics": false
+  }
 }
