@@ -18,3 +18,8 @@ $background-pale: #D1C4E9; */
     color:floralwhite;
     min-height: 150px;
 }
+
+.active { 
+    /* router link active class when that link is active the below stylings will b applied */
+    background: #4527A0;
+}
