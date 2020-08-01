@@ -23,6 +23,7 @@ import { FormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { ReactiveFormsModule } from '@angular/forms';
+import {MatSliderModule} from '@angular/material/slider';
 //ang mat spinner
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
@@ -71,6 +72,7 @@ import { LoginComponent } from './login/login.component';
     MatSelectModule,
     MatSlideToggleModule,
     MatProgressSpinnerModule,
+    MatSliderModule,
 
     FormsModule,
     ReactiveFormsModule
