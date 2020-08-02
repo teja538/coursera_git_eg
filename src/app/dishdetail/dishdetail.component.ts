@@ -101,9 +101,8 @@ export class DishdetailComponent implements OnInit {
 
     this.commentForm.valueChanges
       .subscribe(data => 
-        this.onValueChanged(data),
-        this.k=this.data(this.data));
-    this.onValueChanged(); // (re)set validation messages now
+        this.onValueChanged(data));
+        this.onValueChanged(); // (re)set validation messages now
   }
   data(data)
   {
@@ -134,17 +133,14 @@ export class DishdetailComponent implements OnInit {
 
   onSubmit() {
     this.comment = this.commentForm.value;
-    // console.log(this.comment);
-    console.log(this.dish.comments)
-   
+    console.log(this.comment);
+    this.dish.comments.push(this.comment,this.date);
     this.commentForm.reset({
      author:'',
-     rating:'5',
-      comment: '',
-      date:this.date
+     rating:5,
+     comment:""
     });
    
-
     this.commentFormDirective.resetForm();
   }
 
