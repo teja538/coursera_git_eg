@@ -13,7 +13,7 @@ import { baseURL } from '../shared/baseurl';
 export class MenuComponent implements OnInit {
 
   dishes: Dish[]; //data given above in const
-
+  errMess: string;
   // selectedDish:Dish;
 
 
@@ -23,7 +23,8 @@ export class MenuComponent implements OnInit {
     ////this.dishes = this.dishService.getDishes();//returns dishes details
     // this.dishService.getDishes()
     // .then(dishes => this.dishes = dishes);
-    this.dishService.getDishes().subscribe(dishes => this.dishes = dishes);
+    this.dishService.getDishes().subscribe(dishes => this.dishes = dishes,
+      errmess => this.errMess = <any>errmess);
 
   }
 
